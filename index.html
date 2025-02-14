@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMAR - Sistem Edukasi Makanan dan Anak Rentan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo SEMAR" id="semar-logo">
+        <h1>SEMAR</h1>
+        <p>Sistem Edukasi Makanan dan Anak Rentan</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home-link">Beranda</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="welcome" style="display: block;">
+            <h2>Selamat Datang di SEMAR!</h2>
+            <p>SEMAR adalah platform yang didedikasikan untuk memberikan informasi dan edukasi mengenai stunting pada anak. Kami menyediakan berbagai fitur untuk membantu Anda memahami dan mencegah stunting.</p>
+        </section>
+
+        <section id="faq-section" style="display: none;">
+            <h2>Tanya Jawab</h2>
+            <a href="https://udify.app/chat/6Wj2oU37DaxFF7Cj" target="_blank"><button>Tanya Jawab dengan SEMAR</button></a>&nbsp;
+            <a href="https://www.halodoc.com/tanya-dokter" target="_blank"><button>Tanya Jawab dengan Dokter</button></a>
+        </section>
+
+        <section id="nutrition-analysis-section" style="display: none;">
+            <h2>Analisis Nutrisi</h2>
+            <p><a href="https://udify.app/chat/J8WZ9zIULRWGrPSJ" target="_blank">Informasi Analisis Nutrisi Makanan</a></p>
+        </section>
+
+        <section id="imt-calculator" style="display: none;">
+            <h2>Kalkulator IMT</h2>
+            <div class="input-group">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="number" id="weight" name="weight">
+            </div>
+            <div class="input-group">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="number" id="height" name="height">
+            </div>
+            <div class="input-group">
+                <label for="age">Usia:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="input-group">
+                <label>Jenis Kelamin:</label>
+                <label for="male"><input type="radio" id="male" name="gender" value="male"> Laki-laki</label>
+                <label for="female"><input type="radio" id="female" name="gender" value="female"> Perempuan</label>
+            </div>
+            <button id="calculate">Hitung IMT</button>
+            <div class="result">
+                <p>IMT Anda: <span id="imt-result"></span></p>
+                <p>Interpretasi: <span id="imt-interpretation"></span></p>
+            </div>
+        </section>
+      <section id="food-recommendation-section" style="display:none">
+        <h2>Rekomendasi Makanan</h2>
+         <button id="detect-location">Dapatkan Lokasi</button>
+        <div id="location-info"></div>
+        <div id="city-name"></div>
+        <div id="food-recommendation"></div>
+      </section>
+
+       <section id="hepatitis-b-diagnosis" style="display: none;">
+            <h2>Diagnosis Hepatitis B</h2>
+            <a href="https://rad-capybara-cd8a42.netlify.app/" target="_blank"><button>Mulai Screening</button></a>
+        </section>
+
+         <section id="features" style="display: block;">
+            <h2>Fitur Evaluasi Anak</h2>
+            <button id="imt-calculator-button">Kalkulator IMT</button>
+            <button id="food-recommendation-button">Rekomendasi Makanan</button>
+            <button id="nutrition-analysis-button">Analisis Nutrisi</button>
+            <button id="faq-button">Tanya Jawab</button>
+            <button id="disability-evaluation-button">Evaluasi Anak Difabel</button>
+        </section>
+
+    </main>
+
+        <section id="disability-evaluation-section" style="display: none;">
+            <h2>Evaluasi Anak Difabel</h2>
+            <a href="https://scintillating-sherbet-503f82.netlify.app/" target="_blank"><button>Buka Evaluasi Anak Difabel</button></a>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 SEMAR. Hak Cipta Dilindungi.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
